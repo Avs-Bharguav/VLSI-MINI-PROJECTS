@@ -19,7 +19,8 @@ Then press convert and simulate.It will give two graphs one from ngspice and oth
 ![Input vs output plot](https://github.com/Avs-Bharguav/VLSI-MINI-PROJECTS/blob/main/my_project/inverter_project_images/inv/ino.png)  
 ![](https://github.com/Avs-Bharguav/VLSI-MINI-PROJECTS/blob/main/my_project/inverter_project_images/inv/in%20vs%20out.png)   
 ![](https://github.com/Avs-Bharguav/VLSI-MINI-PROJECTS/blob/main/my_project/inverter_project_images/inv/image.png)  
-![Id Vs Vin](
+### 2. Id Vs Vin
+![Id Vs Vin](https://github.com/Avs-Bharguav/VLSI-MINI-PROJECTS/blob/main/my_project/inverter_project_images/inv/id.png)
 
 
 
