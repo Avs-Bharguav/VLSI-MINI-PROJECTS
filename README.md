@@ -20,7 +20,10 @@ Then press convert and simulate.It will give two graphs one from ngspice and oth
 ![](https://github.com/Avs-Bharguav/VLSI-MINI-PROJECTS/blob/main/my_project/inverter_project_images/inv/in%20vs%20out.png)   
 ![](https://github.com/Avs-Bharguav/VLSI-MINI-PROJECTS/blob/main/my_project/inverter_project_images/inv/image.png)  
 ### 2. Id Vs Vin
-![Id Vs Vin](https://github.com/Avs-Bharguav/VLSI-MINI-PROJECTS/blob/main/my_project/inverter_project_images/inv/id.png)   
+![Id Vs Vin](https://github.com/Avs-Bharguav/VLSI-MINI-PROJECTS/blob/main/my_project/inverter_project_images/inv/id.png)  
+### 2.Layout designing using Magic.  
+First you need to download the 180nm tech.. I have uploaded in the reprosetory by name "sample6m.tech". Go to tech. manager and load it. Then keeping in mind all the design rules you can draw the layout.  
+![](
 
 ## II. Characterisation of NMOS and PMOS.  
 
