@@ -1,5 +1,5 @@
 # VLSI-MINI-PROJECTS
-##I. CMOS Inverter Design using 180nm technology.
+## I. CMOS Inverter Design using 180nm technology.
 **_The motive of this project is to understand the basics of a cmos inverter designing and get a hands on the opensource design tools._** 
 **The design tools used:**  
 **esim**-To designing the schamitic.  
@@ -24,7 +24,10 @@ Then press convert and simulate.It will give two graphs one from ngspice and oth
 ### 2.Layout designing using Magic.  
 First you need to download the 180nm tech.. I have uploaded in the reprosetory by name "sample6m.tech". Go to tech. manager and load it. Then keeping in mind all the design rules you can draw the layout.  
 ![tech. manager](https://github.com/Avs-Bharguav/VLSI-MINI-PROJECTS/blob/main/my_project/inverter_project_images/magic/Screenshot%20from%202023-03-05%2015-26-53.png)  
-![layout](
+![layout](https://github.com/Avs-Bharguav/VLSI-MINI-PROJECTS/blob/main/my_project/inverter_project_images/magic/Screenshot%20from%202023-03-27%2021-53-47.png)  
+After that you extract all the node capacitances and resistances and also the spice netlist of the layout. Using ngspice we test the layout operational. If the layout is not proper then the output will have not reach its peak due to excess capacitances.  
+
+
 
 ## II. Characterisation of NMOS and PMOS.  
 
