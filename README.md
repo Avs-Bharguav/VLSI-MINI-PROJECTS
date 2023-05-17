@@ -87,7 +87,8 @@ plot v(in) v(out)
 *Note: the spice netlist, the .lib files all must be in the same directory where you are running ngspice.And in the spice files during specifying the connections of nmos and pmos the device names must be used as provided in its .lib/model file here cmosn/cmosp.*  
   
 ### Output
-![ngspice out](
+![ngspice out](https://github.com/Avs-Bharguav/VLSI-MINI-PROJECTS/blob/main/my_project/inverter_project_images/magic/Screenshot%20from%202023-03-27%2021-53-28.png)  
+
 
 
 
