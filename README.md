@@ -1,5 +1,5 @@
 # VLSI-MINI-PROJECTS
-## CMOS Inverter Design using esim
+## CMOS Inverter Design using 180nm technology.
 **_The motive of this project is to understand the basics of a cmos inverter designing and get a hands on the opensource design tools._** 
 **The design tools used:**  
 **esim**-To designing the schamitic.  
