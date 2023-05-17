@@ -1,0 +1,20 @@
+
+Subcircuit summary:
+Circuit 1: cmos_inverter.cir               |Circuit 2: inv_layout.spice                
+-------------------------------------------|-------------------------------------------
+cmosp (1)                                  |cmosp (1)                                  
+cmosn (1)                                  |cmosn (1)                                  
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 4                          |Number of nets: 4                          
+---------------------------------------------------------------------------------------
+Circuits match uniquely.
+Property errors were found.
+Netlists match uniquely.
+There were property errors.
+Circuit 2 inv_layout.spice instance cmosn1001 property "l" has no match in circuit 1.
+Circuit 2 inv_layout.spice instance cmosp1000 property "l" has no match in circuit 1.
+Cells have no pins;  pin matching not needed.
+Device classes cmos_inverter.cir and inv_layout.spice are equivalent.
+Circuits match uniquely.
+Property errors were found.
+The following cells had property errors: cmos_inverter.cir

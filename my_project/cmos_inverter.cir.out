@@ -1,0 +1,24 @@
+* /home/avs/esim-workspace/cmos_inverter/cmos_inverter.cir
+
+.include NMOS-180nm.lib
+.include PMOS-180nm.lib
+m2 idc vin net-_m2-pad3_ net-_m2-pad3_ CMOSP W=720n L=180n M=1
+m1 net-_m1-pad1_ vin gnd gnd CMOSN W=360n L=180n M=1
+v2 net-_m2-pad3_ gnd  dc 1.8v
+* u1  vin plot_v1
+* u2  idc plot_v1
+v1  vin gnd pulse(0 1.8 0 0.2n 0.2n .8n 2n)
+* u3  idc net-_m1-pad1_ plot_i2
+v_u3 idc net-_m1-pad1_ 0
+.tran .1e-12 .2e-09 0e-00
+
+* Control Statements 
+.control
+run
+print allv > plot_data_v.txt
+print alli > plot_data_i.txt
+plot v(vin)
+plot v(idc)
+plot i(v_u3)
+.endc
+.end

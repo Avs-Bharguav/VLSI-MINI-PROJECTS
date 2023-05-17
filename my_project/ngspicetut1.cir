@@ -1,0 +1,16 @@
+*first line is title[ attenuator circuit]
+
+*netlist
+
+V1 a 0 200V
+R1 a b 10
+R2 b 0 10
+
+*control commands
+
+.control
+
+op
+print v(a) v(b) v(a,b) i(V1)
+
+.endc

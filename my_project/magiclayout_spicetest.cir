@@ -1,0 +1,20 @@
+*magic layout test
+
+.include NMOS-180nm.lib
+.include PMOS-180nm.lib
+.include inv_layout.spice
+
+
+
+v1 vdd gnd 1.8
+v2 in gnd pulse(0 1.8 0 50p 50p 1n 2n)
+
+.control
+
+tran 10p 8n
+plot v(in) v(out)
+
+ 
+.endc
+.end
+

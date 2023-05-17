@@ -1,0 +1,80 @@
+*tutorial 2
+
+*for including any devices we need to include the model file
+
+.include NMOS-180nm.lib
+
+vdd net1 gnd 1.5
+rd net1 vout 100k
+*vg vin gnd 0.6
+***********sin(offset, amplitude, frequency)
+*vg vin gnd sin(0.5 50m 10k) 
+************to vary frequency{dc amplitude 0.4 and ac amplitude 1}{vout/vin}=vout
+vg vin gnd dc 0.6 ac 1
+
+* mosfets ngspice takes the arguments as drain, gate  sourse, Body.
+
+m1 vout vin gnd gnd cmosn w=1u l=180n
+
+*****analysis
+
+.control
+
+
+*****dc analysis
+
+*op
+*print @m1[id]
+*print @m1[gm]
+*print v(vout) v(vin) v(net1)
+
+****** dc sweep ploting
+
+*****syntex-  dc (source u want to change) (starting value) (end) (stepsize)
+
+****** to plot transister parameters like id, gm we need to save it first
+
+
+
+*save all @m1[id]
+*save all @m1[gm]
+
+
+*dc vg 0 1.5 0.1
+
+*plot v(vout)
+*plot @m1[id]
+*plot @m1[gm]
+*plot @m1[id] vs v(vout)
+
+*********small signal analysis/transiant
+********tran stepsize endtime{start time is defolt 0}  
+*tran 1u 0.5m
+********* to plot inn same window wirte side by side
+*plot v(vout) v(vin)
+
+
+
+************AC analysis/ frequency response
+************two plots magnitude plot and phase plot
+**********magnitude plot
+*********syntex-  ac {decade,linear,octave  pointes per decade starting frequency end frequency
+
+ac dec 100 1 100g
+**********for ploting dB plot syntex-vdb(), and for phase plot- ph
+plot vdb(vout)
+plot ph(vout)
+
+
+
+
+
+
+.endc
+.end
+
+
+
+
+
+
