@@ -1,5 +1,5 @@
 # VLSI-MINI-PROJECTS
-## CMOS Inverter Design using 180nm technology.
+##I. CMOS Inverter Design using 180nm technology.
 **_The motive of this project is to understand the basics of a cmos inverter designing and get a hands on the opensource design tools._** 
 **The design tools used:**  
 **esim**-To designing the schamitic.  
@@ -20,7 +20,10 @@ Then press convert and simulate.It will give two graphs one from ngspice and oth
 ![](https://github.com/Avs-Bharguav/VLSI-MINI-PROJECTS/blob/main/my_project/inverter_project_images/inv/in%20vs%20out.png)   
 ![](https://github.com/Avs-Bharguav/VLSI-MINI-PROJECTS/blob/main/my_project/inverter_project_images/inv/image.png)  
 ### 2. Id Vs Vin
-![Id Vs Vin](https://github.com/Avs-Bharguav/VLSI-MINI-PROJECTS/blob/main/my_project/inverter_project_images/inv/id.png)
+![Id Vs Vin](https://github.com/Avs-Bharguav/VLSI-MINI-PROJECTS/blob/main/my_project/inverter_project_images/inv/id.png)   
+
+## II. Characterisation of NMOS and PMOS.  
+
 
 
 
