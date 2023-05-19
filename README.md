@@ -90,7 +90,8 @@ plot v(in) v(out)
 ![ngspice out](https://github.com/Avs-Bharguav/VLSI-MINI-PROJECTS/blob/main/my_project/inverter_project_images/magic/Screenshot%20from%202023-03-27%2021-53-28.png)  
    
  After designing the layout we need to do layout vs schamatic for which we use netgen. Comp.out is the file result from Netgen. Here you should run both the netlist files generated from the schamitic and the layout. The result should show: **Circuits match uniquly** .  
- ![](
+ ![](https://github.com/Avs-Bharguav/VLSI-MINI-PROJECTS/blob/main/my_project/inverter_project_images/LVS_NETGEN/Screenshot%20from%202023-04-04%2012-27-09.png)  
+ 
 
 
 
