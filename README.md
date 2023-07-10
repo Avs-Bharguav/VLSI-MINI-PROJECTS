@@ -1,4 +1,4 @@
-# VLSI-MINI-PROJECTS
+# Schematic and Layout design of a CMOS inverter using 180nm tech.
 ## I. CMOS Inverter Design using 180nm technology.
 **_The motive of this project is to understand the basics of a cmos inverter designing and get a hands on the opensource design tools._** 
 **The design tools used:**  
