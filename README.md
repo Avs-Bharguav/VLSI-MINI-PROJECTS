@@ -1,5 +1,5 @@
 # Schematic and Layout design of a CMOS inverter using 180nm tech.
-## I. CMOS Inverter Design using 180nm technology.
+
 **_The motive of this project is to understand the basics of a cmos inverter designing and get a hands on the opensource design tools._** 
 **The design tools used:**  
 **esim**-To designing the schamitic.  
@@ -9,19 +9,19 @@
 **OpenTimer**- For Static timing analysis.   
 _I have downloaded all the above tools by the following tutorial :  
 And a very excillent site to learn these tools is the : opencircuit.com.  
-### 1.Drawing schamitic using esim
+## 1.Drawing schamitic using esim
 ![shows the schamatic of an inverter drawn using esim](https://github.com/Avs-Bharguav/VLSI-MINI-PROJECTS/blob/main/my_project/inverter_project_images/inv/Screenshot%20from%202023-04-04%2009-50-40.png)  
 I have used the 180nm mos devices from the esim library and a pulsed input source.After making the schamitic go to option convert Kicad to ngspice and choose transiant analysis as shown.![](https://github.com/Avs-Bharguav/VLSI-MINI-PROJECTS/blob/main/my_project/inverter_project_images/inv/Screenshot%20from%202023-05-16%2013-36-59.png)   
 Next in source details for pulsed source use this values:initial value-0 pulsed value-1.8v delay time-0 rise time-0 fall time-0 pulse width-1p  pulse period-2p. You can play with these values to get a proper graph. And put dc source of 1.8v.After which give the mos device model file in the device modeling option as shown.![](https://github.com/Avs-Bharguav/VLSI-MINI-PROJECTS/blob/main/my_project/inverter_project_images/inv/Screenshot%20from%202023-05-16%2014-18-46.png)  
 Then press convert and simulate.It will give two graphs one from ngspice and other python plot.  
-### Output  
-### 1. Input vs Output
+## Output  
+## 1. Input vs Output
 ![Input vs output plot](https://github.com/Avs-Bharguav/VLSI-MINI-PROJECTS/blob/main/my_project/inverter_project_images/inv/ino.png)  
 ![](https://github.com/Avs-Bharguav/VLSI-MINI-PROJECTS/blob/main/my_project/inverter_project_images/inv/in%20vs%20out.png)   
 ![](https://github.com/Avs-Bharguav/VLSI-MINI-PROJECTS/blob/main/my_project/inverter_project_images/inv/image.png)  
-### 2. Id Vs Vin
+## 2. Id Vs Vin
 ![Id Vs Vin](https://github.com/Avs-Bharguav/VLSI-MINI-PROJECTS/blob/main/my_project/inverter_project_images/inv/id.png)  
-### 2.Layout designing using Magic.  
+## 2.Layout designing using Magic.  
 First you need to download the 180nm tech.. I have uploaded in the reprosetory by name "sample6m.tech". Go to tech. manager and load it. Then keeping in mind all the design rules you can draw the layout.  
 ![tech. manager](https://github.com/Avs-Bharguav/VLSI-MINI-PROJECTS/blob/main/my_project/inverter_project_images/magic/Screenshot%20from%202023-03-05%2015-26-53.png)  
 ![layout](https://github.com/Avs-Bharguav/VLSI-MINI-PROJECTS/blob/main/my_project/inverter_project_images/magic/Screenshot%20from%202023-03-27%2021-53-47.png)  
@@ -86,7 +86,7 @@ plot v(in) v(out)
 ```  
 *Note: the spice netlist, the .lib files all must be in the same directory where you are running ngspice.And in the spice files during specifying the connections of nmos and pmos the device names must be used as provided in its .lib/model file here cmosn/cmosp.*  
   
-### Output
+## Output
 ![ngspice out](https://github.com/Avs-Bharguav/VLSI-MINI-PROJECTS/blob/main/my_project/inverter_project_images/magic/Screenshot%20from%202023-03-27%2021-53-28.png)  
    
  After designing the layout we need to do layout vs schamatic for which we use netgen. Comp.out is the file result from Netgen. Here you should run both the netlist files generated from the schamitic and the layout. The result should show: **Circuits match uniquly** .  
@@ -95,7 +95,7 @@ plot v(in) v(out)
 
 
 
-## II. Characterisation of NMOS and PMOS.  
+
 
 
 
